@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:sohaib_task/utils/best_seller_container.dart';
 import 'package:sohaib_task/utils/category_container.dart';
 import 'package:sohaib_task/utils/image_container.dart';
+import 'package:sohaib_task/view/setting.dart';
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
 
@@ -218,7 +220,11 @@ class _HomePageState extends State<HomePage> {
                          width: size.width*0.1,
                        ),
                        GestureDetector(
-                         onTap: (){},
+                         onTap: (){
+                           Get.to(
+                             Setting()
+                           );
+                         },
                          child: const Icon(Icons.person_outlined,color: Colors.white,))
                       // const Icon(Icons)
                      ],
