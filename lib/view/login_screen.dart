@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                        if (signInStatus == 'signInSuccessful') {
                         passwordController.clear();
                         emailController.clear();
-                        Get.to(HomePage());
+                        Get.offAll(HomePage());
                       } else {
                         Functions.showSnackBar(
                             'Please Enter Valid Information', context);

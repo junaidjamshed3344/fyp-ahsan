@@ -128,7 +128,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           usernameController.clear();
                           passwordController.clear();
                           emailController.clear();
-                          Get.to(HomePage());
+                          Get.offAll(HomePage());
                             }
                              else {
                           Functions.showSnackBar(registrationStatus, context);

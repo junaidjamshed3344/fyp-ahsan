@@ -217,7 +217,9 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                          width: size.width*0.1,
                        ),
-                       const Icon(Icons.person_outlined,color: Colors.white,)
+                       GestureDetector(
+                         onTap: (){},
+                         child: const Icon(Icons.person_outlined,color: Colors.white,))
                       // const Icon(Icons)
                      ],
                    ),
